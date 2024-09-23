@@ -1,0 +1,234 @@
+/* Enterprise Header */
+.enterprise-header {
+  text-align: center;
+  background-color: #2d68e0;
+  color: white;
+  padding: 100px 20px;
+}
+
+.enterprise-header h1 {
+  font-size: 48px;
+}
+
+.enterprise-header p {
+  font-size: 18px;
+}
+
+/* Enterprise Overview Section */
+.enterprise-overview {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.overview-text {
+  width: 50%;
+}
+
+.overview-text h2 {
+  color: #2d68e0;
+  font-size: 32px;
+}
+
+.overview-img img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Services Section */
+.services {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  color: #2d68e0;
+  font-size: 32px;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.service {
+  width: 22%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  color: #2d68e0;
+  font-size: 24px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Approach Section */
+.approach {
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.approach h2 {
+  color: #2d68e0;
+  font-size: 32px;
+}
+
+.approach-list {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.approach-list li {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Case Studies Section */
+.case-studies {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+}
+
+.case-studies h2 {
+  text-align: center;
+  color: #2d68e0;
+  font-size: 32px;
+}
+
+.case-study {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #2d68e0;
+}
+
+.case-study h3 {
+  font-size: 22px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2d68e0;
+  color: white;
+}
+
+/* ----------------------------- Responsive Design ----------------------------- */
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .enterprise-header h1 {
+    font-size: 48px;
+  }
+
+  .enterprise-header p {
+    font-size: 24px;
+  }
+}
+
+/* Medium devices (tablets, 768px to 1024px) */
+@media (max-width: 1024px) {
+  .enterprise-overview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overview-text, .overview-img {
+    width: 90%;
+    text-align: center;
+  }
+
+  .services .service {
+    width: 45%;
+  }
+  
+  .enterprise-header h1 {
+    font-size: 40px;
+  }
+
+  .enterprise-header p {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (mobiles, up to 768px) */
+@media (max-width: 768px) {
+  /* .nav-links {
+    flex-direction: column;
+  } */
+
+  .enterprise-overview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overview-text, .overview-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .enterprise-header h1 {
+    font-size: 36px;
+  }
+
+  .enterprise-header p {
+    font-size: 18px;
+  }
+
+  .services h2, .approach h2, .case-studies h2 {
+    font-size: 28px;
+  }
+}
+
+/* Extra Small devices (phones, up to 480px) */
+@media (max-width: 480px) {
+  /* .nav-links li {
+    margin-right: 10px;
+  } */
+
+  .enterprise-header h1 {
+    font-size: 28px;
+  }
+
+  .enterprise-header p {
+    font-size: 16px;
+  }
+
+  .service {
+    width: 90%;
+  }
+
+  .services h2, .approach h2, .case-studies h2 {
+    font-size: 24px;
+  }
+
+  .approach-list li {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nex.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" href="img/logo.png">
+  <script src="nex.js" defer></script> <!-- Load JS asynchronously -->
+  <title>NexGen Wealth Partners</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <p class="site-name">NexGen Wealth Partners</p>
+      </div>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#Blog">Blog</a>
+          <div class="dropdown-content">
+            <a href="enterprise.html">Expertise</a>
+            <a href="global.html">Global Outlook</a>
+            <a href="mangement.html">Management</a>
+          </div>
+        </li>
+        <a href="login.html"><button class="login-btn">Login</button></a>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+   
+  <main>
+    <section class="contact-section" style="background-color: rgb(3, 3, 58);">
+      <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Please fill out the form below and we'll get in touch as soon as possible.</p>
+
+        <form id="contactForm">
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="input-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <div id="formMessage" class="form-message"></div> <!-- Form response message -->
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

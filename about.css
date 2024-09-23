@@ -1,0 +1,191 @@
+/* Global Styles */
+.about-header {
+  text-align: center;
+  background-color: #2d68e0;
+  color: white;
+  padding: 80px 20px;
+  padding-top: -100px;
+  
+}
+
+.about-header h1 {
+  font-size: 40px;
+  margin-top: 25px;
+}
+
+.about-header p {
+  font-size: 18px;
+}
+
+.text1 {
+  font-weight: 520;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mission-values {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.mission, .values {
+  width: 40%;
+  text-align: center;
+}
+
+.mission img, .values img {
+  width: 100px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.tittle {
+  font-style: italic;
+  color: #2d68e0;
+}
+
+h2 {
+  color: #2d68e0;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.team {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-member img {
+  width: 150px;
+  border-radius: 20px;
+}
+
+.approach {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.approach-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.approach-list li {
+  margin-bottom: 20px;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.testimonial {
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2d68e0;
+  color: white;
+}
+
+/* Responsive Styles */
+/* Tablets and Medium-sized screens */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 32px;
+  }
+
+  .about-header p {
+    font-size: 16px;
+  }
+
+  .mission-values {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission, .values {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .team-member {
+    width: 45%;
+  }
+
+  .team-member img {
+    width: 120px;
+  }
+
+  .approach h2 {
+    font-size: 24px;
+  }
+
+  .approach-list li {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Phones and Small screens */
+@media (max-width: 480px) {
+  .about-header h1 {
+    font-size: 24px;
+  }
+
+  .about-header p {
+    font-size: 14px;
+  }
+
+  .mission, .values {
+    width: 100%;
+  }
+
+  .mission img, .values img {
+    width: 80px;
+  }
+
+  .team-members {
+    flex-direction: column;
+  }
+
+  .team-member {
+    width: 80%;
+  }
+
+  .team-member img {
+    width: 100px;
+  }
+
+  .approach h2 {
+    font-size: 20px;
+  }
+
+  .approach-list li {
+    font-size: 14px;
+  }
+
+  .testimonial {
+    font-size: 14px;
+  }
+}

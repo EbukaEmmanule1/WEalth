@@ -1,0 +1,389 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+  .head2 {
+    background-position: center;
+    background-color: white;
+    /* padding-top: 80px; */
+    text-align: center;
+  }
+  
+  .Five {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .Six {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .Seven {
+    color: rgb(6, 6, 40);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .Eight {
+    color: #2d68e0;
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  
+  .Nine {
+    color: black;
+    font-size: 16px;
+    font-weight: bold; 
+    margin-top: -20px;
+  }
+  
+  .Butt-Ten {
+    background-color: rgb(6, 6, 40);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10PX;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .Butt-Ten:hover {
+    background-color: purple;
+  }
+  
+  .Eleven {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Ele1, .Ele4, .Ele7 {
+    height: 70px;
+    margin-top: 50px;
+  }
+  
+  .Ele2, .Ele5, .Ele8 {
+    color: #2d68e0;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .Ele3, .Ele6, .Ele9 {
+    color: black;
+    font-size: 14px;
+    font-weight: bold; 
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .Five {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Six {
+      width: 90%;
+    }
+  
+    .Eleven {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .Butt-Ten {
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Eight {
+      font-size: 24px;
+    }
+  
+    .Ele1, .Ele4, .Ele7 {
+      height: 50px;
+    }
+  
+    .Ele2, .Ele5, .Ele8 {
+      font-size: 16px;
+    }
+  
+    .Ele3, .Ele6, .Ele9 {
+      font-size: 12px;
+    }
+  
+    .Butt-Ten {
+      font-size: 14px;
+    }
+  }
+
+
+
+    .logo-img {
+      height: 50px;
+      margin: 20px auto 0;
+      display: block;
+    }
+
+    .test3 {
+      color: white;
+      font-size: 15px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .test4 {
+      font-size: 30px;
+      color: rgb(6, 6, 66);
+      text-align: center;
+      font-weight: bold;
+      margin: 10px auto;
+    }
+
+    /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animated {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Fifteen {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Fou4, .Fou5, .Fou6 {
+      width: 80%;
+    }
+
+    .test4 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .Fou4, .Fou5, .Fou6 {
+      width: 100%;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    .press1, .press2, .press3 {
+      font-size: 12px;
+    }
+
+    .test4 {
+      font-size: 20px;
+    }
+
+    .logo-img {
+      height: 40px;
+    }
+  }
+
+   /* General Styles */
+   .Five1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 30px;
+    /* background-color: rgb(3, 21, 88); */
+  }
+
+  .Four7, .Four8, .Four9, .Four10 {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 22%;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+  }
+
+  .Four7:hover, .Four8:hover, .Four9:hover, .Four10:hover {
+    transform: translateY(-10px);
+  }
+
+  .press4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .but4 {
+    background-color: #800080;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .but4:hover {
+    background-color: #5a005a;
+  }
+
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .logo-img-footer {
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+  }
+
+  .social-icons img {
+    width: 40px;
+    transition: transform 0.3s ease;
+  }
+
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+
+  .logo-text {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Cambria', Georgia, serif;
+    margin-top: 10px;
+  }
+
+  .logo-text2 {
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .last {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  .link2{
+    list-style: none;
+  }
+
+  .links1 {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+
+  .links1:hover {
+    color: blue;
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animated {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .Five1 {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Four7, .Four8, .Four9, .Four10 {
+      width: 80%;
+    }
+
+    .logo-text {
+      font-size: 35px;
+    }
+
+    .logo-text2 {
+      font-size: 14px;
+    }
+
+    .but4 {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .Four7, .Four8, .Four9, .Four10 {
+      width: 100%;
+    }
+
+    .logo-text {
+      font-size: 30px;
+    }
+
+    .logo-text2 {
+      font-size: 12px;
+    }
+
+    .but4 {
+      font-size: 12px;
+      padding: 10px;
+    }
+
+    .social-icons img {
+      width: 35px;
+    }
+
+    .last {
+      font-size: 12px;
+    }
+  }
+

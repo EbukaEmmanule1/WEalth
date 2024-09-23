@@ -1,0 +1,129 @@
+/* Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2d68e0;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.hamburger {
+  display: none;
+} */
+
+.outlook-header {
+  background-color: #2d68e0;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.outlook-header h1 {
+  font-size: 48px;
+}
+
+.global-trends {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.global-trends h2 {
+  color: #2d68e0;
+  margin-bottom: 20px;
+}
+
+.global-trends ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.global-trends ul li {
+  padding: 10px 0;
+}
+
+.region-insights {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.region-box {
+  display: inline-block;
+  margin: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.region-box img {
+  width: 100px;
+}
+
+.region-insights h3 {
+  color: #2d68e0;
+}
+
+.investment-strategy {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+footer {
+  background-color: #2d68e0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .region-box {
+    width: 80%;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .outlook-header h1 {
+    font-size: 32px;
+  }
+
+  .region-box img {
+    width: 80px;
+  }
+
+  .global-trends ul li {
+    font-size: 14px;
+  }
+}

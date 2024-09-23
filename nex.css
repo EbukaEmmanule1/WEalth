@@ -1,0 +1,260 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(6, 6, 40);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.site-name {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+.nav-links li a:hover {
+  color: #0d51da;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  background-color: #0d51da;
+  border: none;
+  color: white;
+  border-radius: 20px 0 0 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: aqua;
+}
+
+  /* Dropdown */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 62%;
+    right: 0;
+    background-color: rgb(6, 6, 40);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+  transition: transform 0.3s ease;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Hero Section */
+.head1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #0d51da; */
+  color: white;
+  text-align: center;
+}
+
+.Two {
+  font-size: 50px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.Three {
+  font-size: 24px;
+  margin-top: 20px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.Butt-Four {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  background-color: #0d51da;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeIn 4s ease-in-out;
+}
+
+.Butt-Four:hover {
+  background-color: aqua;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background-color: rgb(6, 6, 40);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  padding-top: 28px;
+
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: rgb(4, 4, 65);
+    height: 35vh;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .show-nav {
+    display: flex !important;
+    animation: slideDown 0.5s ease-in-out forwards;
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .Two {
+    font-size: 40px;
+  }
+
+  .Three {
+    font-size: 22px;
+  }
+
+  .Butt-Four {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Two {
+    font-size: 35px;
+  }
+
+  .Three {
+    font-size: 18px;
+  }
+
+  .Butt-Four {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}

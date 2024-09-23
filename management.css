@@ -1,0 +1,149 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* header {
+  background-color: #2d68e0;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.hamburger {
+  display: none;
+} */
+
+.management-header {
+  background-color: #2d68e0;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.management-header h1 {
+  font-size: 48px;
+}
+
+.team-leadership {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.team-leadership h2 {
+  color: #2d68e0;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.member {
+  width: 30%;
+  text-align: center;
+}
+
+.member img {
+  width: 150px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.title{
+  font-style: italic;
+  color: #2d68e0;
+  font-weight: bold;
+}
+
+.management-approach {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.management-approach h2 {
+  color: #2d68e0;
+  text-align: center;
+}
+
+.management-approach ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.management-approach ul li {
+  padding: 10px 0;
+}
+
+.testimonial {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.testimonial-box {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+footer {
+  background-color: #2d68e0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .management-header h1 {
+    font-size: 32px;
+  }
+
+  .member img {
+    width: 120px;
+  }
+
+  .team-leadership p,
+  .management-approach p,
+  .testimonial-box {
+    font-size: 14px;
+  }
+}
